@@ -122,31 +122,7 @@ This paragraph contains a few tips & trick that can improve your daily productiv
 
 ### LSP client tweaks
 
-Default settings of the LSP client are insufficient to enable the full power of Metals. 
-The first step is a fixing problem with insufficient information in the code completion popup.
-To fix it, open "Preferences > Preferences: LSP Settings" and add the following setting:
-
-```json
-{
-  // ...
-  "prefer_label_over_filter_text": true,
-}
-```
-
-![Better code completion](https://i.imgur.com/2Rcfauz.gif)
-
-The next two steps are optional. If you prefer to only enable Metals completions
-(without mixing them with the default ones from Sublime) set the following setting
-in the "Preferences > Preferences: LSP Settings":
-
-```json
-{
-  // ...
-  "only_show_lsp_completions": true,
-}
-```
-
-Also, if you prefer to show symbol references in Sublime's quick panel instead of the bottom panel
+If you prefer to show symbol references in Sublime's quick panel instead of the bottom panel
 set following setting in the "Preferences > Preferences: LSP Settings":
 
 ```json
